@@ -2,7 +2,8 @@ const fetch = require('node-fetch');
 
 module.exports = async (req, res) => {
     if (!req.query.url) {
-        throw new Error(`missing "url" parameter`);
+        res.json({ status: 'error', message: `missing "url" parameter` });
+        return;
     }
     const response = await fetch(req.query.url, {
         method: 'POST',
@@ -13,5 +14,5 @@ module.exports = async (req, res) => {
         return response.body.pipe(res);
     }
 
-    throw new Error(`unexpected response ${response.statusText}`);
+    res.json({ status: 'error', message: `unexpected response ${response.statusText}` });
 }
