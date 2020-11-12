@@ -1,15 +1,27 @@
 {
   "name": "get-to-post",
+  "description": "",
   "version": "1.0.0",
   "private": true,
-  "description": "",
+  "author": {
+    "name": "Samuel Gratzl",
+    "email": "sam@sgratzl.com",
+    "url": "https://www.sgratzl.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgratzl/get-to-post.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sgratzl/get-to-post/issues"
+  },
+  "homepage": "https://github.com/sgratzl/get-to-post#readme",
   "main": "index.js",
   "scripts": {
     "dev": "vercel dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "vercel": "^20.1.3"
   }
