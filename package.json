@@ -23,7 +23,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "vercel": "^28.20.0"
+    "vercel": "^33.2.0"
   },
   "dependencies": {
     "node-fetch": "^3.2.10"
